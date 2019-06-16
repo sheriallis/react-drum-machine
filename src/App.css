@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1B1B1B;
+  color: #fff;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+#drum-pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.drum-pad {
+  padding: 50px;
+  font-size: 2rem;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+}
+
+.drum-pad:active {
+  background: yellowgreen;
+}
+
+.drum-pad:nth-of-type(1), .drum-pad:nth-of-type(2), .drum-pad:nth-of-type(3) {
+  background: #FFC400;
+}
+.drum-pad:nth-of-type(4), .drum-pad:nth-of-type(5), .drum-pad:nth-of-type(6) {
+  background: #65C2C7;
+}
+.drum-pad:nth-of-type(7), .drum-pad:nth-of-type(8), .drum-pad:nth-of-type(9) {
+  background: #FF6158;
+}
